@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <logpath>Log\</logpath>
+
+  <DomainConfig>
+    <DomainName></DomainName>
+    <MachineName></MachineName>
+    <AdminUserName></AdminUserName>
+    <AdminPassword></AdminPassword>
+  </DomainConfig>
+  
+  
+  <Installations>
+
+    <Install>
+      <installOrder>0</installOrder>
+      <name>Download 7zip</name>
+      <version>1</version>
+      <desc>(Download ONLY)</desc>
+      <pkgLocation>OpsConfig/7za.exe</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run></run>
+      <active>true</active>
+    </Install>
+
+
+    <Install>
+      <installOrder>100</installOrder>
+      <name>Java JRE</name>
+      <version>Ver 7 Update 11</version>
+      <desc>JRE package</desc>
+      <arguments>/s</arguments>
+      <pkgLocation>OpsConfig/Java/jre-7u11-windows-x64.exe</pkgLocation>
+      <installationPath></installationPath>
+      <run>jre-7u11-windows-x64.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>200</installOrder>
+      <name>Silverlight 64</name>
+      <version>Silverlight 5</version>
+      <desc>Microsoft Silverlight</desc>
+      <pkgLocation>OpsConfig/Silverlight/Silverlight.exe</pkgLocation>
+      <installationPath></installationPath>
+      <arguments>/q /doNotRequireDRMPrompt</arguments>
+      <run>Silverlight.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>300</installOrder>
+      <name>Adobe Acrobate Reader</name>
+      <version>1</version>
+      <desc>Installation of Install Adobe Acrobate</desc>
+      <pkgLocation>OpsConfig/Adobe/install_reader9_en_mssa_aih.exe</pkgLocation>
+      <installationPath></installationPath>
+      <arguments>/sAll /rs /l /msi"/qb-! /norestart ALLUSERS=1 EULA_ACCEPT=YES AutoUpdateDisable=1</arguments>
+      <run>install_reader9_en_mssa_aih.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>400</installOrder>
+      <name>Adobe Air</name>
+      <version>1</version>
+      <desc>Installation of Adobe Air</desc>
+      <pkgLocation>OpsConfig/Adobe/AdobeAIRInstaller.exe</pkgLocation>
+      <installationPath></installationPath>
+      <arguments>-silent</arguments>
+      <run>AdobeAIRInstaller.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>500</installOrder>
+      <name>Adobe Flash</name>
+      <version>1</version>
+      <desc>Installation of Adobe Flash</desc>
+      <pkgLocation>OpsConfig/Adobe/install_flashplayer11x32_mssd_aih.exe</pkgLocation>
+      <installationPath></installationPath>
+      <arguments>/sAll /rs /l /msi" /qb-! /norestart ALLUSERS=1 EULA_ACCEPT=YES AutoUpdateDisable=1</arguments>
+      <run>install_flashplayer11x32_mssd_aih.exe</run>
+      <active>true</active>
+    </Install>
+
+
+    
+
+    <Install>
+      <installOrder>700</installOrder>
+      <name>NivioPerfomanceCounter</name>
+      <version>1</version>
+      <desc>Installation of NivioPerformanceCounterSetup.msi (download only - will use NivioPCsetup.exe for installation)</desc>
+      <pkgLocation>OpsConfig/Nivio/NivioPerformanceCounterSetup.msi</pkgLocation>
+      <installationPath></installationPath>
+      <arguments></arguments>
+      <run></run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>800</installOrder>
+      <name>NivioPCsetup.exe</name>
+      <version>1</version>
+      <desc>NivioPCsetup.exe for installation</desc>
+      <pkgLocation>OpsConfig/Nivio/NivioPCsetup.exe</pkgLocation>
+      <installationPath></installationPath>
+      <arguments>/quiet</arguments>
+      <run>NivioPCsetup.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>900</installOrder>
+      <name>Install Remote Desktop Session Host</name>
+      <version>1</version>
+      <desc>Adding windows feature RDSH..MUST EXECUTE Manually</desc>
+      <pkgLocation>OpsConfig/Misc/ServerRDSCmd.bat</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run>ServerRDSCmd.bat</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1000</installOrder>
+      <name>Turn on Aero Experience</name>
+      <version>1</version>
+      <desc>Turn on Aero</desc>
+      <pkgLocation>OpsConfig/Misc/Aero.bat</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run>Aero.bat</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1100</installOrder>
+      <name>RemoveIESec</name>
+      <version>1</version>
+      <desc>Uninstall IE Enhanced Sec</desc>
+      <pkgLocation>OpsConfig/Registry/IEHArden_V4.bat</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run>IEHArden_V4.bat</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1200</installOrder>
+      <name>App V zip file</name>
+      <version>1</version>
+      <desc>Download appV (Download ONLY)</desc>
+      <pkgLocation>OpsConfig/Nivio/AppV.zip</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run></run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1300</installOrder>
+      <name>App V</name>
+      <version>1</version>
+      <desc>Download appV bat</desc>
+      <pkgLocation>OpsConfig/Nivio/AppV.bat</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run>AppV.bat</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1400</installOrder>
+      <name>download OffVirt.msi </name>
+      <version>1</version>
+      <desc></desc>
+      <pkgLocation>OpsConfig/Nivio/OffVirt.msi</pkgLocation>
+      <arguments></arguments>
+      <installationPath></installationPath>
+      <run></run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1500</installOrder>
+      <name>download catalog for offvirt.msi </name>
+      <version>1</version>
+      <desc></desc>
+      <pkgLocation>OpsConfig/Nivio/Catalog.zip</pkgLocation>
+      <arguments> x Catalog.zip</arguments>
+      <installationPath></installationPath>
+      <run>7za.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1600</installOrder>
+      <name>Office AppKit </name>
+      <version>1</version>
+      <desc>Installing product activation</desc>
+      <pkgLocation></pkgLocation>
+      <arguments>/i  OffVirt.msi /qn /norestart PIDKEYS="GGFQW-XB77C-W9QW2-TJ979-HFYRG" USEROPERATIONS=1</arguments>
+      <installationPath></installationPath>
+      <run>msiexec</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1700</installOrder>
+      <name>Office AppKit </name>
+      <version>1</version>
+      <desc>Installing product activation</desc>
+      <pkgLocation></pkgLocation>
+      <arguments>/i  OffVirt.msi /qn /norestart PIDKEYS="YCCHJ-FFP4D-G6VQQ-JBB4G-WCG3T" USEROPERATIONS=1</arguments>
+      <installationPath></installationPath>
+      <run>msiexec</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1800</installOrder>
+      <name>Office AppKit </name>
+      <version>1</version>
+      <desc>Installing product activation</desc>
+      <pkgLocation></pkgLocation>
+      <arguments>/i OffVirt.msi /qn /norestart PIDKEYS="2Q6WG-JWMRM-8MXMC-9TW6K-MVT3R" USEROPERATIONS=1</arguments>
+      <installationPath></installationPath>
+      <run>msiexec</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>1900</installOrder>
+      <name>Office AppKit </name>
+      <version>1</version>
+      <desc>Installing product activation</desc>
+      <pkgLocation></pkgLocation>
+      <arguments>/i  OffVirt.msi /qn /norestart PIDKEYS="Q6T2W-MJHB4-X9QRR-T97JH-YB9KV" USEROPERATIONS=1</arguments>
+      <installationPath></installationPath>
+      <run>msiexec</run>
+      <active>true</active>
+    </Install>
+
+    
+    <Install>
+      <installOrder>2000</installOrder>
+      <name>download hosts file</name>
+      <version>1</version>
+      <desc>download (download only) the host file for copying to c:\windows\system32\driver\etc</desc>
+      <pkgLocation>OpsConfig/Misc/hosts</pkgLocation>
+      <arguments>hosts c:\windows\system32\drivers\etc\</arguments>
+      <installationPath></installationPath>
+      <run></run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>2100</installOrder>
+      <name>Run xcopy for Host file</name>
+      <version>1</version>
+      <desc>copy host file to c:\windows\system32\driver\etc</desc>
+      <pkgLocation></pkgLocation>
+      <arguments>/minimized /wait cmd.exe /c copy hosts C:\Windows\System32\drivers\etc\</arguments>
+      <installationPath></installationPath>
+      <run>C:\Windows\system32\cmd.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>2200</installOrder>
+      <name>Regedit Remove computer desktop icon</name>
+      <version>1</version>
+      <desc>Remove computer desktop icon</desc>
+      <pkgLocation>OpsConfig/Registry/Remove_Computer_Desktop_Icon.reg</pkgLocation>
+      <arguments>/s Remove_Computer_Desktop_Icon.reg</arguments>
+      <installationPath></installationPath>
+      <run>c:\Windows\System32\regedt32.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>2300</installOrder>
+      <name>Regedit Control Panel Desktop Icon </name>
+      <version>1</version>
+      <desc>Remove Control Panel Desktop Icon</desc>
+      <pkgLocation>OpsConfig/Registry/Remove_Control_Panel_Desktop_Icon.reg</pkgLocation>
+      <arguments>/s {TEMPDIR]Remove_Control_Panel_Desktop_Icon.reg</arguments>
+      <installationPath></installationPath>
+      <run>c:\Windows\System32\regedt32.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>2400</installOrder>
+      <name>Regedit-Remove Users Files Desktop Icon </name>
+      <version>1</version>
+      <desc>Remove Users Files Desktop Icon</desc>
+      <pkgLocation>OpsConfig/Registry/Remove_Users_Files_Desktop_Icon.reg</pkgLocation>
+      <arguments>/s Remove_Users_Files_Desktop_Icon.reg</arguments>
+      <installationPath></installationPath>
+      <run>c:\Windows\System32\regedt32.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>2500</installOrder>
+      <name>Regedit-Remove Network Icon </name>
+      <version>1</version>
+      <desc>Remove Network Icon</desc>
+      <pkgLocation>OpsConfig/Registry/RemoveNetworkIcon.reg</pkgLocation>
+      <arguments>/s RemoveNetworkIcon.reg</arguments>
+      <installationPath></installationPath>
+      <run>c:\Windows\System32\regedt32.exe</run>
+      <active>true</active>
+    </Install>
+
+
+    <Install>
+      <installOrder>2600</installOrder>
+      <name>Regedit-Air Disable Updates </name>
+      <version>1</version>
+      <desc>Air disable updates</desc>
+      <pkgLocation>OpsConfig/Registry/air_disable_updates.reg</pkgLocation>
+      <arguments>/s air_disable_updates.reg</arguments>
+      <installationPath></installationPath>
+      <run>c:\Windows\System32\regedt32.exe</run>
+      <active>true</active>
+    </Install>
+
+    <Install>
+      <installOrder>2700</installOrder>
+      <name>Ericom Installation </name>
+      <version>1</version>
+      <desc>Ericon Install</desc>
+      <pkgLocation>OpsConfig/Nivio/EricomAccessNowServer.msi</pkgLocation>
+      <arguments>/i EricomAccessNowServer.msi /qn</arguments>
+      <installationPath></installationPath>
+      <run>msiexec</run>
+      <active>true</active>
+    </Install>
+<!--
+    <Install>
+      <installOrder>2800</installOrder>
+      <name>Delete Paths</name>
+      <version>1</version>
+      <desc>Delete all the paths to the shortcuts in Desktop, programData and </desc>
+      <arguments></arguments>
+      <pkgLocation>OpsConfig/Misc/DeletePaths.bat</pkgLocation>
+      <installationPath></installationPath>
+      <run>DeletePaths.bat</run>
+      <active>true</active>
+    </Install>
+    
+    
+    <Install>
+      <installOrder>2900</installOrder>
+      <name>Nivio Code in c:\Program Files </name>
+      <version>1</version>
+      <desc>Nivio code in program files</desc>
+      <pkgLocation>OpsConfig/Nivio/NivioProgramfiles.zip</pkgLocation>
+      <arguments>e NivioProgramfiles.zip -y -o"c:\\program files\\Nivio"</arguments>
+      <installationPath></installationPath>
+      <run>7za.exe</run>
+      <active>true</active>
+    </Install>
+    
+    -->
+   
+  </Installations>
+ 
+  <ManualInstallationSteps>
+    <step>
+      <Number>0</Number>
+      <Title>Resolve all UI prompts</Title>
+      <Instructions>All updates should be DISABLED.  Do NOT restart until the end of the manual installations. 
+      Click "Finish" on all dialog boxes when installations are done.  Adobe fires up browsers and points to them to Adobe site.  Close those browsers.  </Instructions>
+    </step>
+
+    <step>
+      <Number>1</Number>
+      <Title>Delete Paths</Title>
+      <Instructions>In the installation folder of the ops.exe, as an administrator, execute DeletePaths.bat.  This will delete all the shortcuts</Instructions>
+    </step>
+
+    <step>
+      <Number>2</Number>
+      <Title>Move Nivio bits to program files.</Title>
+      <Instructions>The bits should already be present in the ops.exe folder.  The zip file is NivioProgramfiles.zip. 
+      1) Unzip the content to a directory.
+      2) Copy the the NivioTemp folder to c:\Program Files
+      3) Rename NivioTemp to Nivio
+      </Instructions>
+    </step>
+
+    <step>
+      <Number>100</Number>
+      <Title>Push McAfee Virus Scan Enterprise agent from EPO Management Server</Title>
+      <Instructions>
+        Need to get together with a Sys Admin. for this.
+        1) Login to EPO Server->EPO Mgmt Console->SystemTree->Groups->Add New System
+        2) Remove Shortcut from all user profile.
+      </Instructions>
+    </step>
+
+    <step>
+      <Number>200</Number>
+      <Title>Configure RDS Services</Title>
+      <Instructions>
+        Add Role :- Remote Desktop Session Host
+        Add User :- Add domain user
+        Experience:-  Client Experience Feature Sound Redirection,
+        Add RDS Appropriate Licensing Server (ex C1-SQLMR01)"
+
+
+      </Instructions>
+    </step>
+
+    <step>
+      <Number>300</Number>
+      <Title>Configure RDS Services</Title>
+      <Instructions>
+
+        Add User :- Add domain user
+        Experience:-  Client Experience Feature Sound Redirection,
+        Add RDS Appropriate Licensing Server (ex C1-SQLMR01)"
+
+
+      </Instructions>
+    </step>
+
+    <step>
+      <Number>400</Number>
+      <Title>NAT/PAT Entry on firewall</Title>
+      <Instructions>
+        Make NAT/PAT Entry available on Firewall (8xxx for RDP/3389, 9xxx for Ericom/8080)
+
+      </Instructions>
+    </step>
+
+    <step>
+      <Number>500</Number>
+      <Title>Nivio Performance Counter Setup</Title>
+      <Instructions>
+
+        (A) Change ConnectionSting for C1 in Configuration file. C:\Program Files(x86) \NivioPerformanceCounterSetup\ NivioPerformanceCounters.exe.config
+        (B) Update Server  Details in NivioPCounters Database (NivioTSMapping2 Table) (like ServerName, Internal/External ServerIP, Port
+        (C) Update TemplateID value to 1 in Nivio_server_status table
+        Note: Recommended to have DBA available so that require changes can been done correctly in table
+        
+      </Instructions>
+    </step>
+
+    <step>
+      <Number>600</Number>
+      <Title>Make Terminal Server Available in Production/LB</Title>
+      <Instructions>
+        Update Server Details in Nivio Database (NivioTSMapping)
+      </Instructions>
+    </step>
+
+   
+
+
+    
+  </ManualInstallationSteps>
+</root>

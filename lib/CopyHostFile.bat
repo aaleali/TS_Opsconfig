@@ -1,0 +1,1 @@
+c:\\windows\\system32\\xcopy.exe /Y /F c:\\ops\\lib\hosts c:\\windows\\system32\\drivers\\etc\\

@@ -1,0 +1,1 @@
+..\\7za.exe e NivioProgramfiles.zip -r -y  -o"c:\\program files\\Nivio\\"
